@@ -26,19 +26,19 @@ wget https://www.pythia.org/download/pythia83/pythia8312.tgz
 tar -zxvf pythia8312.tgz
 rm pythia8312.tgz
 cd pythia8312/
-./configure --with-python --with-gzip --with-mg5mes --with-openmp --with-lhapdf6=/users/mleblan6/work/crw-notebooks/LHAPDF-6.5.4_install/
+./configure --with-python --with-gzip --with-mg5mes --with-openmp 
 make -j8
 export PYTHONPATH=$(PREFIX_LIB):$PYTHONPATH 
 ```
 
-`$(PREFIX_LIB)` should be the `lib/` directory within pythia that contains `pythia8.so`, for me this was `export PYTHONPATH=/users/mleblan6/work/crw-notebooks/pythia8312/lib/:$PYTHONPATH` on OSCAR.
+`$(PREFIX_LIB)` should be the `lib/` directory within pythia that contains `pythia8.so`, for me this was `export PYTHONPATH=/users/mleblan6/work/fastjet-examples/pythia8312/lib/:$PYTHONPATH` on OSCAR.
 
 You'll need to add that line to your `.bashrc`.
 
 You can test and make sure everything is working so-far:
 
 ```
-(jupyter.venv) [mleblan6@login010 crw-notebooks]$ python
+(jupyter.venv) [mleblan6@login010 fastjet-examples]$ python
 Python 3.9.16 (main, Dec  8 2022, 00:00:00)
 [GCC 11.3.1 20221121 (Red Hat 11.3.1-4)] on linux
 Type "help", "copyright", "credits" or "license" for more information.
