@@ -24,7 +24,7 @@ exceptiongroup==1.2.1
 executing==2.0.1
 fastjet==3.4.2.1
 fastjsonschema==2.20.0
-fonttools==4.53.0
+fonttools==4.60.2
 fqdn==1.5.1
 fsspec==2024.6.1
 h11
