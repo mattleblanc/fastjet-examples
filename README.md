@@ -4,7 +4,7 @@ This is a collection of notebooks that have examples of jet physics algorithms, 
 
 ## Initial setup
 
-The first time you check this out, you'll need to create a python virtual environment:
+You'll need Python 3.11.5 or newer, which the pinned requirements require. The first time you check this out, create a python virtual environment:
 
 ```
 python -m venv jupyter.venv
